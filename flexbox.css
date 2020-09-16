@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+body{
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    background-color: #1abc9c;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+.navbar{
+    display: flex;
+    background-color: #333333;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar a{
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+.main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.lsidebars{
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex: 2;
+}
+
+.main-content{
+    padding: 20px;
+    flex: 5;
+}
+
+.rsidebar{
+    text-align: center;
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    justify-content: flex-end;
+    flex: 2;
+    padding: 20px;
+}
+
+.rsidebar img{
+    height: 200px;
+}
+
+#name{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px){
+    .navbar, .main {
+        flex-direction: column;
+    }
+    .rsidebar{
+        align-self: center;
+    }
+}
